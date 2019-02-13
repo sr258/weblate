@@ -587,7 +587,7 @@ class GithubRepository(GitMergeRequestBase):
         """Generate environment for process execution."""
         env = super(GithubRepository, cls)._getenv()
         # Add path to config if it exists
-        userconfig = os.path.expanduser('~/.config/hub')
+        userconfig = os.path.expanduser('/home/weblate/.config/hub')
         if os.path.exists(userconfig):
             env['HUB_CONFIG'] = userconfig
 
