@@ -139,7 +139,7 @@ class LanguageQuerySet(models.QuerySet):
 
         # Remove some unwanted chars
         code = code.replace(' ', '').replace('(', '').replace(')', '')
-        
+
         # Strip leading and trailing .
         code = code.strip('.')
 
