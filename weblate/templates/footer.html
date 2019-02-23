@@ -6,7 +6,7 @@
   <li><a href="{% url 'about' %}">{% blocktrans %}About Weblate{% endblocktrans %}</a></li>
   {% if has_legal %}  
   <li><a href="{$ url 'legal:index' %}">Impressum</a></li>
-  <li><a href="{% url 'legal:tos' %}">Nutzungsbedingungen</a></li>
+  <li><a href="{% url 'legal:terms' %}">Nutzungsbedingungen</a></li>
   <li><a href="{% url 'legal:cookies' %}">Cookies</a></li>
   <li><a href="{$ url 'legal:privacy' %}">Datenschutz</a></li>
   {% endif %}
