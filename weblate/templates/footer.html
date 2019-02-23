@@ -4,7 +4,12 @@
  <ul>
   <li>{% blocktrans %}Powered by {{ weblate_version_link }}{% endblocktrans %}</li>
   <li><a href="{% url 'about' %}">{% blocktrans %}About Weblate{% endblocktrans %}</a></li>
-  {% if has_legal %}<li><a href="{% url 'legal:index' %}">{% trans "Legal" %}</a></li>{% endif %}
+  {% if has_legal %}  
+  <li><a href="{$ url 'legal:index' %}">Impressum</a></li>
+  <li><a href="{% url 'legal:tos' %}">Nutzungsbedingungen</a></li>
+  <li><a href="{% url 'legal:cookies' %}">Cookies</a></li>
+  <li><a href="{$ url 'legal:privacy' %}">Datenschutz</a></li>
+  {% endif %}
   {% if status_url %}<li><a href="{{ status_url }}">{% trans "Service status" %}</a></li>{% endif %}
   <li><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
   <li><a href="{% documentation 'user/index' %}">{% trans "Documentation" %}</a></li>
