@@ -144,9 +144,6 @@ class LanguageQuerySet(models.QuerySet):
         # Strip leading and trailing .
         code = code.strip('.')
 
-        # Strip leading and trailing .
-        code = code.strip('.')
-
         return code
 
     def aliases_get(self, code):
